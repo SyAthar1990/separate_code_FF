@@ -1,9 +1,7 @@
-.body {
-  background-image: url("bgim2.jpg");
-  background-repeat: no-repeat;
-  background-size: 100vw; }
-
 .header {
+  position: absolute;
+  top: 0;
+  left: 0;
   text-align: center;
   font-size: 5vw;
   font-family: "Garamond", serif;
@@ -12,5 +10,32 @@
   width: 100vw;
   height: 12vh;
   float: left; }
+
+.bg {
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%; }
+
+.bg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%; }
+
+#map {
+  position: absolute;
+  top: 12vh;
+  left: 10vw;
+  color: black;
+  position: center;
+  display: block;
+  font-size: 3vw;
+  height: 60vh;
+  width: 80vw; }
 
 /*# sourceMappingURL=style.css.map */

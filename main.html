@@ -11,37 +11,40 @@
 	</head>
 
 	<body id="body">
+		<script type="text/javascript" src="mapstyle.js"></script>
+
+		<div id="bg">
+			<img src="bgim2.jpg" alt="">
+		</div>
 
 		<div class = "header">
 			BazaarWatch
 		</div>
 
-		<div id = "map">
-			<script>
-
-				function initMap(){
-
-					var myLL = {lat: 23.8103, lng: 90.4125};
-
-					var map = new google.maps.Map(document.getElementById('map'), {
-						zoom: 5,
-						center: myLL
-					});
-
-					var marker = new google.maps.Marker({
-						position: myLL,
-						map: map,
-						title: 'test'
-					});
-
-				}
-
-				</script>
-				<script async defer
-				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfgSQcsUK8RBGa3UnrXpf1wyOhUpKhf64&callback=initMap"
-				</script>
-			
+		<div id = "map">	
 		</div>
+
+<script>
+
+      function initMap() {
+        var myLatLng = {lat: 23.8103, lng: 90.4125};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 12,
+          center: myLatLng
+        });
+
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'Hello World!'
+        });
+      }
+    </script>
+
+				<script async defer
+				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfgSQcsUK8RBGa3UnrXpf1wyOhUpKhf64&callback=initMap&sensor=true"
+				</script>
 
 	</body>
 
